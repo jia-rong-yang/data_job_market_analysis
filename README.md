@@ -39,11 +39,12 @@ This dataset covers 2023-01-01 to 2025-06-30, so this portfolio focuses on that 
 
  >*The dataset contains 9,522 DA and BA postings in total in Belgium. DA opportunities are more than three times those of BA. Scope note: All findings, shares, and percentages in the main analysis are based solely on DA and BA postings in Belgium.*
 
-![quarterly job postings](assets\figure_01_quarterly_postings_bar_chart.png)
+![quarterly job postings](assets/figure_01_quarterly_postings_bar_chart.png)
+
 >**Quarterly trends:**
 For quarterly trends, job postings remained relatively stable throughout 2023 and into Q1 2024. From Q2 2024 onward, postings declined. October and November 2024 show zero postings within this dataset. The reason for this gap is unclear. Q1 2025 returned to a similar level as 2023, but Q2 2025 dropped sharply, suggesting a decline after early 2025.
 
-![monthly job postings](assets\figure_02_monthly_postings_bar_chart.png)
+![monthly job postings](assets/figure_02_monthly_postings_bar_chart.png)
 
 >**Monthly trends:**
 For monthly trends, job postings are more active at the beginning of each year. To ensure that months with zero postings still appear in the bar chart, I created a complete calendar CTE and joined it with the job postings fact table based on the target roles.
@@ -80,15 +81,15 @@ The location format in the dataset is not uniform. Grouping directly by location
 
 ## 2. Common listed Skills And The Relationship Between Degree Requirement 
 Since DA postings are more than three times those of BA, comparing the two roles by job volume alone could create a misleading impression. This comparison therefore focuses on distribution patterns and percentage-based indicators.
-![job count per skill bin](assets\figure_03_job_count_per_skill_bin_pie_chart.png)
+![job count per skill bin](assets/figure_03_job_count_per_skill_bin_pie_chart.png)
 >**Share of listed skills:**
 Both roles have the majority of postings in the first two skill count bins (0 and 1–3), suggesting that most postings list no more than 3 skills. The pie chart shows that both roles follow a similar distribution pattern across skill bins.
 
-![job count and with degree job per bin](assets\figure_04_job_count_and_with_degree_job_per_bin.png)
+![job count and with degree job per bin](assets/figure_04_job_count_and_with_degree_job_per_bin.png)
 >**Degree requirement across bins:**
 For DA roles, the percentage of postings requiring a degree generally increases from bin 0 to bin 7–9, suggesting that postings listing more skills tend to have higher degree requirements. BA roles show a flatter trend, suggesting that the number of listed skills has a weaker relationship with degree requirements for BA than for DA. In the 7–9 bin, both roles approach a similar percentage. Beyond that point they diverge: the DA percentage drops in the 10+ bin, which might indicate some highly technical positions place more focus on practical skills than on formal education, while the BA percentage continues to rise slightly.
 
-![Top_10_skills_per_role](assets\figure_05_top_10_skills_per_role.png)
+![Top_10_skills_per_role](assets/figure_05_top_10_skills_per_role.png)
 >The ranking on the Y-axis follows the total skill count across both DA and BA roles, so the most frequently listed skills appear at the top. Both roles share a core foundation: SQL, Excel, and Power BI. For those planning to transition into a data-driven career, these three skills are highly valuable to learn. Overall, both roles require a shared data foundation, but with slightly different emphases: people targeting DA roles should prioritize SQL, Excel, Python, and Power BI; people targeting BA roles should prioritize SQL, Power BI, Excel, and SAP-related knowledge.
 
 
@@ -136,13 +137,13 @@ Over 99% of postings contain no salary information. In this dataset, a NULL sala
 | Leuven, Belgium | beBee Careers | 5 | 10 |
 > Note: Company names are based on the original dataset and may contain naming variations (e.g., Belfius / Belfius Bank, Medpace, Inc. / MEDPACE). Therefore, the employer counts should be interpreted as an approximate view of the market rather than a fully deduplicated company-level analysis.
 
-![postings_per_company](assets\figure_06_postings_per_company.png)
+![postings_per_company](assets/figure_06_postings_per_company.png)
 
 >Brussels has a significantly larger DA / BA job market than Leuven. In the dataset, Brussels has 926 employers and 2,964 job postings, while Leuven has 97 employers and 243 job postings. The volume difference between the two cities is also visible in the bar chart: the top employer in Leuven, TOMRA, has 21 postings, still fewer than the 10th-ranked employer in Brussels, Belfius Bank, with 27 postings. 
 
 
 
-![company_rank_long_tail_line_chart](assets\figure_07_company_rank_long_tail_line_chart.png)
+![company_rank_long_tail_line_chart](assets/figure_07_company_rank_long_tail_line_chart.png)
 >The long-tail chart supports this pattern: in both cities, a small number of employers post many jobs while the majority post only a few.
  - **In Brussels**, the top 10 companies account for 567 postings, representing 19.1% of all Brussels postings, with the remaining 80.9% distributed across other employers. 
 
@@ -168,7 +169,7 @@ Through this project, I strengthened both fundamental SQL skills and several mor
 
 - Job seekers can use the city-level distribution query to check how many DA/BA postings are available in their own city. [Click here](https://github.com/jia-rong-yang/data_job_market_analysis/blob/main/sql_analysis/01_market_overview.sql#L130-L177)
 
-- The top-employer query can also be reused for other cities. Although this project compares Brussels and Leuven, the same query can help job seekers identify major employers in their target location. [Click here](sql_analysis\04_top_employers_by_city.sql)
+- The top-employer query can also be reused for other cities. Although this project compares Brussels and Leuven, the same query can help job seekers identify major employers in their target location. [Click here](sql_analysis/04_top_employers_by_city.sql)
 
 - SQL, Excel, and Power BI appear as common core skills for both DA and BA roles. For people transitioning into data-driven roles, these are the most worthwhile skills to prioritize first.
 
