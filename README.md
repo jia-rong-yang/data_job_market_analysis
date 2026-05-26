@@ -121,7 +121,6 @@ Over 99% of postings contain no salary information. In this dataset, a NULL sala
 | Brussels, Belgium | Cream Consulting | 28 | 9 |
 | Brussels, Belgium | Belfius Bank | 27 | 10 |
 
-> Note: Sandbag Climate Campaign is a climate policy NGO. Its relatively high posting count may appear unexpected compared to its organizational profile, but the data is presented as-is from the source dataset.
 
 | cleaned_location | company_name | job_count_per_company | company_rank |
 |---|---|---:|---:|
