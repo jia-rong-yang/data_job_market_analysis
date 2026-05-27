@@ -168,8 +168,8 @@ SELECT
     cleaned_location,
     COUNT(*) AS job_count,
     ROUND(
-        COUNT(*)::numeric / SUM(COUNT(*)) OVER(), 2
-    )*100 AS pct_per_city
+        COUNT(*)::numeric *100 / SUM(COUNT(*)) OVER(), 2
+    ) AS pct_per_city
     
 FROM jobs_in_belgium
 WHERE location_type = 'city_level_location'

@@ -63,20 +63,9 @@ The location format in the dataset is not uniform. Grouping directly by location
 
 >Most postings have identified city-level locations, which is sufficient to support city-level analysis. Some postings only indicate Belgium (13.9%) or a region (1.16%) without specifying a city; these groups are handled separately rather than removed. Remote jobs account for only 2.17% of postings, indicating that fully remote DA / BA roles are limited in this dataset.
 
-| rank | cleaned_location | job_count | pct_per_city |
-|---:|---|---:|---:|
-| 1 | Brussels, Belgium | 2964 | 38.0 |
-| 2 | Antwerp, Belgium | 781 | 10.0 |
-| 3 | Mechelen, Belgium | 308 | 4.0 |
-| 4 | Ghent, Belgium | 302 | 4.0 |
-| 5 | Leuven, Belgium | 243 | 3.0 |
-| 6 | Zaventem, Belgium | 181 | 2.0 |
-| 7 | Saint-Gilles, Belgium | 102 | 1.0 |
-| 8 | Liège, Belgium | 99 | 1.0 |
-| 9 | Bruges, Belgium | 91 | 1.0 |
-| 10 | Kortrijk, Belgium | 85 | 1.0 |
+![job count by city level location](assets/figure_08_job_count_by_city_level_location.png)
 
->Among city-level postings, Brussels accounts for 38% of DA/BA postings, nearly four times the share of Antwerp (10%), making it the primary hub for DA / BA roles in Belgium. Leuven ranks fifth with a 3% share, meaning it is visible in the rankings but limited in volume.
+>Among city-level postings, Brussels accounts for 37.6% of DA/BA postings, nearly four times the share of Antwerp (9.9%), making it the primary hub for DA / BA roles in Belgium. Leuven ranks fifth with a 3.1% share, meaning it is visible in the rankings but limited in volume.
 
 
 ## 2. Common listed Skills And The Relationship Between Degree Requirement 
